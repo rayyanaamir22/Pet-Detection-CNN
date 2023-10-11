@@ -6,4 +6,5 @@ Dependencies:
 - tensorflow
 - keras
 - pandas
-- cv2 (opencv-python)
+- opencv-python
+- matplotlib

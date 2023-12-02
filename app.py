@@ -25,12 +25,14 @@ def main() -> None:
     # video loop
     while True:
         # read frame from webcam
+        # frame is a numpy array of the image pixels
         ret, frame = cap.read()
         if not ret:
             break
 
         # TODO: process frame
-        # remember to greyscale it
+        # might need to say tf.convert_to_tensor(frame)
+        scores, boxes, classes = model.call(frame)
         ...
 
         # display frame
